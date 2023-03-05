@@ -1,0 +1,279 @@
+html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    color: #0c365a;
+    background-color: #fdf7ed;
+}
+canvas {
+    border-radius: 16px;
+}
+.nav {
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main_nav {
+    display: flex;
+    flex-direction: row;
+}
+.donate_btn {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.donate_btn p {
+    border-radius: 8px;
+    border: solid #0c365a;
+    padding: 10px 16px;
+    margin: 6px 20px;
+}
+.donate_btn p:hover {
+    background-color: #0c365a;
+    color: #fdf7ed;
+}
+.donate_btn a {
+    color: #0c365a;
+    text-decoration: none;
+}
+.main_nav a {
+    color: #0c365a;
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+}
+.main_nav a:hover {
+    text-decoration: underline;
+}
+#nav_bg {
+    /* z-index: 1;
+    position: fixed;
+    top: 0; */
+    width: 100%;
+    height: 50px;
+    /* background-color: #fdf7ed; */
+    /* background-color: red; */
+}
+.sticky {
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.hero {
+    background-image: url("assets/penguin_hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-content: center;
+}
+.hero_textbox {
+    margin: 250px 20px auto auto;
+    width: 500px;
+    height: 100%;
+    /* align-content: center; */
+
+}
+.hero_textbox h1 {
+    display: flex;
+    /* justify-content: right; */
+}
+#hero_text {
+    /* animation: 3s ease-in 0s normal; */
+    animation-name: fade_in_text;
+    /* animation-delay: 1s; */
+    animation-duration: 6s;
+}
+@keyframes fade_in_text {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.see_more {
+    margin: auto;
+}
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.main {
+    margin: auto;
+    margin-top: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.mission_section, .learn_section, .quiz_section {
+    margin-bottom: 150px;
+}
+.quiz_section {
+    padding: 20px;
+    border: solid #0c365a;
+    border-radius: 16px;
+    box-shadow: 10px 10px;
+}
+.question{
+    margin: 24px auto 16px auto;
+}
+#submit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: solid #0c365a;
+    font-family: 'Lato', sans-serif;
+    color: #0c365a;
+    background-color: #fdf7ed;
+}
+#submit:hover {
+    background-color: #0c365a;
+    color: #fdf7ed;
+}
+.answers{
+    /* margin-bottom: ; */
+}
+.mission_section {
+    border: solid #0c365a;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+    padding: 20px;
+}
+
+.learn_section {
+    background-color: #0c365a;
+    color: #fdf7ed;
+    border-radius: 16px;
+    padding: 20px;
+}
+.btn_holder {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#learn_more_btn {
+    background-color: #fdf7ed;
+    color: #0c365a;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: solid #0c365a;
+    text-decoration: none;
+}
+#learn_more_btn:hover {
+    text-decoration: underline;
+}
+
+.about_hero {
+    background-image: url("assets/wistful.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 45%;
+    
+}
+.about_text {
+    margin: 60px auto 100px auto;
+    width: 800px;
+}
+.about_text h1 {
+    margin-bottom: 50px;
+}
+
+.facts_body {
+    margin: 100px auto 100px auto;
+    width: 800px;
+}
+.facts_title {
+    /* margin: 100px auto auto auto; */
+    /* width: 600px; */
+    margin-bottom: 60px;
+}
+.facts_main {
+    /* margin: 100px auto auto auto; */
+    /* width: 1000px; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 40px;
+    row-gap: 100px;
+    /* justify-items: stretch; */
+}
+.facts_main div {
+    margin-bottom: 100px;
+}
+.facts_main img {
+    border-radius: 16px;
+    box-shadow: 10px 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.threats_heading {
+    margin-bottom: 100px;
+}
+.threats_body {
+    margin: 100px auto 100px auto;
+    width: 800px;
+}
+
+.help_body {
+    margin: 100px auto 100px auto;
+    width: 800px;
+}
+.help_body div {
+    margin-top: 60px;
+}
+
+
+@media screen and (max-width:1200px) {
+    .hero {
+        justify-content: left;
+    }
+    .hero_textbox {
+        margin: 100px auto auto 20px;
+        width: 500px;
+    }
+    .main {
+        margin: 100px 20px 100px 20px;
+        width: auto;
+    }
+
+    .about_text {
+        margin: 100px 20px 100px 20px;
+        width: auto;
+    }
+
+    .facts_body {
+        margin: 100px 20px 100px 20px;
+        width: auto;
+    }
+    .facts_title {
+        /* margin: 100px 20px 40px 20px; */
+    }
+    .facts_main {
+        /* width: 100%; */
+        /* margin: 60px 40px 100px 40px; */
+        /* padding: 60px 40px 100px 40px; */
+    }
+    
+    .threats_body {
+        margin: 150px 20px 100px 20px;
+        width: auto;
+    }
+}

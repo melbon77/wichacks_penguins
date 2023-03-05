@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+    <title>Penguins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="../p5/p5.js"></script>
+    <!-- <script src="script.js"></script> -->
+<!-- <style>
+    #nav_bg {
+        width: 100%;
+        height: 50px;
+        background-color: red;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+</style> -->
+</head>
+<body>
+    <div class="nav">
+        <div class="main_nav">
+            <a href="/index.html"><p><b>Home</b></p></a>
+            <a href="/about.html"><p>About</p></a>
+            <a href="/facts.html"><p>Facts</p></a>
+            <a href="/threats.html"><p>Threats</p></a>
+            <a href="/waystohelp.html"><p>Ways You Can Help</p></a>
+        </div>
+        <div class="donate_btn">
+            <a id="donate_btn" href="/donate.html"><p>Donate</p></a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero_textbox">
+            <h1 id="hero_text">Penguins are the second most endangered bird in the world.</h1>
+        </div>
+        <div class="see_more">
+            <h2><i class="arrow down"></i></h2>
+        </div>
+    </div>
+    <!-- <div id="nav_bg"></div> -->
+    <div class="main">
+        <div class="mission_section">
+            <h2>Our Mission</h2>
+            <p>Spreading information and educating others about penguins.
+            We are committed to providing accurate information about penguins.
+            </p>
+            <p>Through education and awareness of this issue we can solve this problem together! 
+                The future generations deserve to see these awesome birds!
+            </p>
+
+        </div>
+        <div class="learn_section"> 
+            <h2>Want to learn more about penguins?</h2>
+            <p>Check out some interesting facts you might not know about different penguin species from around the world.</p>
+            <div class="btn_holder">
+                <a id="learn_more_btn" href="/facts.html">Learn More</a>
+            </div>
+        </div>
+        <div class="play_section">
+            <h2>Take the quiz!</h2>
+            <p>How much do you know about penguins?</p>
+            <!-- <script src="sketch.js"></script> -->
+        </div>
+
+        <div class="quiz_section">
+            <div id="quiz"></div>
+            <button id="submit">Submit Quiz</button>
+            <div class="question"></div>
+            <div class="answers"></div>
+            <div id="results"></div>
+            <script src="quiz.js"></script>
+ 
+        </div>
+        </div>
+    </div>
+    <!-- <div class="game_section">
+        <div id="character"></div>
+        <script src="sketch.js"></script>
+    </div> -->
+
+    <!-- <script>
+        console.log("test script")
+        window.onscroll = function() {makeSticky()};
+        let navBg = document.getElementById("nav_bg");
+        let sticky = navBg.offsetTop;
+        function makeSticky() {
+            console.log("make sticky" + navBg + sticky)
+            if (window.pageYoffset >= sticky) {
+                navBg.classList.add("sticky");
+            } else {
+                navBg.classList.remove("sticky");
+            }
+        }
+    </script> -->
+</body> 
+</html>
